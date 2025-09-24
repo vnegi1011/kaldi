@@ -5,7 +5,11 @@
 # Copyright 2017   Ewald Enzinger
 # Apache 2.0
 
-data=$HOME/cv_corpus_v1
+# original
+# data=$HOME/cv_corpus_v1
+
+# change to your downloaded dataset
+data=/content/kaldi_data/cv-corpus-22.0-2025-06-20/ky
 data_url=https://common-voice-data-download.s3.amazonaws.com/cv_corpus_v1.tar.gz
 
 . ./cmd.sh
