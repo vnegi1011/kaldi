@@ -34,7 +34,7 @@ if [ $stage -le 1 ]; then
   done
   
   # Prepare ARPA LM and vocabulary using SRILM
-  local/prepare_lm.sh data/valid_train
+  # local/prepare_lm.sh data/valid_train
   # Prepare the lexicon and various phone lists
   # Pronunciations for OOV words are obtained using a pre-trained Sequitur model
   local/prepare_dict.sh
@@ -43,7 +43,7 @@ if [ $stage -le 1 ]; then
   utils/prepare_lang.sh data/local/dict \
     '<unk>' data/local/lang data/lang || exit 1
 
-  utils/format_lm.sh data/lang data/local/lm.gz data/local/dict/lexicon.txt data/lang_test/
+  # utils/format_lm.sh data/lang data/local/lm.gz data/local/dict/lexicon.txt data/lang_test/
 fi
 
 if [ $stage -le 2 ]; then
